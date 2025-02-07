@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Automóviles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/logo.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/logo.jpg">
+	<link rel="icon" sizes="192x192" href="./images/logo.jpg">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <img src="./images/logo.jpg" alt="Logo">
+            <div class="logo">Autos Increíbles</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#autos">Autos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="hero">
+        <h1 class="hero-text">Encuentra el Auto de tus Sueños</h1>
+        <p class="hero-text">Explora nuestra amplia selección de vehículos nuevos y usados.</p>
+        <a href="#autos" class="btn">Ver Autos</a>
+    </section>
+
+    <!-- Sección de Autos Disponibles -->
+    <section id="autos" class="autos">
+        <h2>Autos Disponibles</h2>
+        <div class="autos-grid">
+            <div class="auto">
+                <img src="images/auto5.jpg" alt="Auto 1">
+                <h3>Sedán Elegante</h3>
+                <p>Precio: $25,000</p>
+                <p>Un sedán confiable y elegante para cualquier ocasión.</p>
+                <a href="https://wa.me/5493547449716?text=Hola,%20me%20interesa%20la%20camioneta%20me%20puedes%20dar%20mas%20datos" class="whatsapp-button" target="_blank"><button class="btn-ver">Comprar ahora</button></a>
+                
+            </div>
+            <div class="auto">
+                <img src="images/auto2.jpg" alt="Auto 2">
+                <h3>SUV Familiar</h3>
+                <p>Precio: $35,000</p>
+                <p>Un sedán confiable y elegante para cualquier ocasión.</p>
+                <a href="https://wa.me/5493547449716?text=Hola,%20me%20interesa%20la%20camioneta%20me%20puedes%20dar%20mas%20datos" class="whatsapp-button" target="_blank"><button class="btn-ver">Comprar ahora</button></a>
+            </div>
+            <div class="auto">
+                <img src="images/auto3.jpg" alt="Auto 3">
+                <h3>Deportivo Veloz</h3>
+                <p>Precio: $50,000</p>
+                <p>Un sedán confiable y elegante para cualquier ocasión.</p>
+                <a href="https://wa.me/5493547449716?text=Hola,%20me%20interesa%20la%20camioneta%20me%20puedes%20dar%20mas%20datos" class="whatsapp-button" target="_blank"><button class="btn-ver">Comprar ahora</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Galería -->
+    <section id="galeria" class="galeria">
+        <h2>Galería de Fotos</h2>
+        <div class="galeria-container">
+            <div class="galeria-grid">
+                <img src="images/auto6.jpg" alt="Foto 3" class="galeria-img">
+                <img src="images/auto7.jpg" alt="Foto 4" class="galeria-img">
+                <img src="images/auto8.jpg" alt="Foto 1" class="galeria-img">
+                <img src="images/auto9.jpg" alt="Foto 2" class="galeria-img">
+                <img src="images/auto10.jpg" alt="Foto 3" class="galeria-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form id="formulario-contacto">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+            <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+            <input type="tel" id="phone" name="phone" placeholder="Celular" required>
+            <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="7" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; Copyright 2025. Designed by Leimbek Web Studio. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal para imágenes -->
+	<div id="modal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="modal-img">
+	</div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
